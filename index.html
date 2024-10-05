@@ -6,8 +6,14 @@
         <link rel="stylesheet" href="css/styles.css"/>
     </head>
     <body>
-        <canvas width="950px" height="950px" id="canvas">HTML5 Canvas is not supported by your browser</canvas>
-        
-        <script src="js/main.js"></script>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://unpkg.com/three/build/three.module.js",
+                    "three/addons/": "https://unpkg.com/three/examples/jsm/"
+                }
+            }
+        </script>
+        <script type="module" src="./js/main.js"></script>
     </body>
 </html>
